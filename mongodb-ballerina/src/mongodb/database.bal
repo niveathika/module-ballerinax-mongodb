@@ -51,9 +51,9 @@ public type Database client object {
 };
 
 function getCollectionNames(handle database) returns string[]|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBDatabaseUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDatabaseUtil"
 } external;
 
 function getCollection(handle database, string collectionName) returns handle|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBDatabaseUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDatabaseUtil"
 } external;

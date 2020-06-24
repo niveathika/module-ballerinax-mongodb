@@ -14,7 +14,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package org.wso2.mongo.exceptions;
+package org.ballerinalang.stdlib.mongodb.exceptions;
 
 import org.ballerinalang.jvm.BallerinaErrors;
 import org.ballerinalang.jvm.BallerinaValues;
@@ -25,11 +25,11 @@ import org.ballerinalang.jvm.values.api.BString;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.wso2.mongo.MongoDBConstants.APPLICATION_ERROR;
-import static org.wso2.mongo.MongoDBConstants.BAL_PACKAGE;
-import static org.wso2.mongo.MongoDBConstants.DatabaseError.DETAIL_FIELD_MONGODB_EXCEPTION;
-import static org.wso2.mongo.MongoDBConstants.DatabaseError.DETAIL_RECORD_NAME;
-import static org.wso2.mongo.MongoDBConstants.DatabaseError.NAME;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.APPLICATION_ERROR;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.BAL_PACKAGE;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.DatabaseError.DETAIL_FIELD_MONGODB_EXCEPTION;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.DatabaseError.DETAIL_RECORD_NAME;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.DatabaseError.NAME;
 
 /**
  * Map Java Exception to Ballerina MongoDB Error.

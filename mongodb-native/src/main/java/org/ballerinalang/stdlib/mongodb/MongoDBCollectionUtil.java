@@ -16,7 +16,7 @@
  * under the License.
  */
 
-package org.wso2.mongo;
+package org.ballerinalang.stdlib.mongodb;
 
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoCollection;
@@ -24,10 +24,10 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.model.UpdateOptions;
 import org.ballerinalang.jvm.values.HandleValue;
 import org.ballerinalang.jvm.values.api.BValueCreator;
+import org.ballerinalang.stdlib.mongodb.exceptions.BallerinaErrorGenerator;
 import org.bson.Document;
-import org.wso2.mongo.exceptions.BallerinaErrorGenerator;
 
-import static org.wso2.mongo.MongoDBConstants.EMPTY_JSON;
+import static org.ballerinalang.stdlib.mongodb.MongoDBConstants.EMPTY_JSON;
 
 /**
  * Java implementation for Ballerina MongoDB Collection.

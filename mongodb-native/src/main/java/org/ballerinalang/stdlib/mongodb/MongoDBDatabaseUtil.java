@@ -16,7 +16,7 @@
  * under the License.
  */
 
-package org.wso2.mongo;
+package org.ballerinalang.stdlib.mongodb;
 
 import com.mongodb.MongoException;
 import com.mongodb.client.MongoCursor;
@@ -24,7 +24,7 @@ import com.mongodb.client.MongoDatabase;
 import org.ballerinalang.jvm.values.HandleValue;
 import org.ballerinalang.jvm.values.api.BString;
 import org.ballerinalang.jvm.values.api.BValueCreator;
-import org.wso2.mongo.exceptions.BallerinaErrorGenerator;
+import org.ballerinalang.stdlib.mongodb.exceptions.BallerinaErrorGenerator;
 
 import java.util.ArrayList;
 

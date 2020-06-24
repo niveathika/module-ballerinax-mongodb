@@ -16,7 +16,7 @@
  * under the License.
  */
 
-package org.wso2.mongo;
+package org.ballerinalang.stdlib.mongodb;
 
 import com.mongodb.client.MongoCursor;
 import org.ballerinalang.jvm.JSONDataSource;

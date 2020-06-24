@@ -24,15 +24,15 @@
         <version>1.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.ei</groupId>
-    <artifactId>module-mongo</artifactId>
+    <groupId>org.ballerinalang</groupId>
+    <artifactId>module-ballerinax-mongodb</artifactId>
     <packaging>pom</packaging>
     <version>2.0.0</version>
-    <name>Ballerina MongoDB Module</name>
+    <name>Ballerinax MongoDB Module</name>
 
     <modules>
-        <module>mongo-utils</module>
-        <module>mongodb</module>
+        <module>mongodb-native</module>
+        <module>mongodb-ballerina</module>
     </modules>
 
     <dependencyManagement>
@@ -46,12 +46,6 @@
             <dependency>
                 <groupId>org.ballerinalang</groupId>
                 <artifactId>ballerina-runtime</artifactId>
-                <version>${ballerina.version}</version>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.ballerinalang</groupId>
-                <artifactId>ballerina-lang</artifactId>
                 <version>${ballerina.version}</version>
                 <scope>compile</scope>
             </dependency>

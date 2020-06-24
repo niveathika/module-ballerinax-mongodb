@@ -14,7 +14,7 @@
 // specific language governing permissions and limitations
 // under the License.
 
-package org.wso2.mongo;
+package org.ballerinalang.stdlib.mongodb;
 
 import org.ballerinalang.jvm.types.BPackage;
 

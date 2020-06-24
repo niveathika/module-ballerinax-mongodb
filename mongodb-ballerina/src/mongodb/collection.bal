@@ -128,28 +128,28 @@ public type Collection client object {
 };
 
 function countDocuments(handle collection, handle? filter) returns int|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;
 
 function listIndices(handle collection) returns map<json>[]|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;
 
 function insert(handle collection, handle document) returns DatabaseError? = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;
 
 function find(handle collection, handle? filter, handle? sort, int 'limit)
 returns map<json>[]|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;
 
 function update(handle collection, handle update, handle? filter, boolean isMultiple, boolean upsert)
 returns int|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;
 
 
 function delete(handle collection, handle? filter, boolean isMultiple) returns int|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBCollectionUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBCollectionUtil"
 } external;

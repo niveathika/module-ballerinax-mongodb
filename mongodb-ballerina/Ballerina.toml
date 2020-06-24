@@ -13,7 +13,7 @@ target = "java8"
 
     [[platform.libraries]]
     module = "mongodb"
-    path = "../mongo-utils/target/mongo-utils-2.0.0.jar"
-    artafactId = "mongo-utils"
+    path = "../mongodb-native/target/mongodb-native-2.0.0.jar"
+    artafactId = "mongodb-native"
     version = "2.0.0"
-    groupId = "org.wso2.ei"
+    groupId = "org.ballerinalang"

@@ -64,19 +64,19 @@ public type Client client object {
 };
 
 function initClient(ClientConfig config) returns handle|ApplicationError = @java:Method {
-    class: "org.wso2.mongo.MongoDBDataSourceUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDataSourceUtil"
 } external;
 
 function getDatabasesNames(handle datasource) returns string[]|DatabaseError = @java:Method {
-    class: "org.wso2.mongo.MongoDBDataSourceUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDataSourceUtil"
 } external;
 
 function getDatabase(handle datasource, string databaseName) returns handle|Error = @java:Method {
-    class: "org.wso2.mongo.MongoDBDataSourceUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDataSourceUtil"
 } external;
 
 function close(handle datasource) = @java:Method {
-    class: "org.wso2.mongo.MongoDBDataSourceUtil"
+    class: "org.ballerinalang.stdlib.mongodb.MongoDBDataSourceUtil"
 } external;
 
 
