@@ -1,24 +1,26 @@
-name: CI
+name: Ballerinax MongoDB CI Build
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
-    build:
+  build:
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:4.2.0
+        ports:
+          - 27017:27017
+    steps:
+      - uses: actions/checkout@v2
 
-        runs-on: ubuntu-latest
-        services:
-          mongodb:
-            image: mongo:4.2.0
-            ports:
-              - 27017:27017
-        steps:
-            - uses: actions/checkout@v2
-            - run: mvn clean install -pl mongo-utils
-            - name: Ballerina Build
-              uses: ballerina-platform/ballerina-action/@swan-lake-release
-              with:
-                args:
-                  build -a -c --sourceroot mongodb
-              env:
-                JAVA_OPTS: -DBALLERINA_DEV_COMPILE_BALLERINA_ORG=true
-                MONGODB_HOST: mongodb
+      - name: MongoDB-native build with Gradle
+        run: ./gradlew clean :mongodb-native:build
+
+      - name: MongoDB-ballerina Build
+        uses: ballerina-platform/ballerina-action/@swan-lake-release
+        with:
+          args:
+            build -a -c --sourceroot mongodb-ballerina
+        env:
+          JAVA_OPTS: -DBALLERINA_DEV_COMPILE_BALLERINA_ORG=true
+          MONGODB_HOST: mongodb
