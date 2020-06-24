@@ -13,7 +13,7 @@ target = "java8"
 
     [[platform.libraries]]
     module = "mongodb"
-    path = "../mongodb-native/target/mongodb-native-2.0.0.jar"
+    path = "../mongodb-native/build/libs/mongodb-native-2.0.0-all.jar"
     artafactId = "mongodb-native"
     version = "2.0.0"
     groupId = "org.ballerinalang"
